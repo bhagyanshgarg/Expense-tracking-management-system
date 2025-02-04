@@ -103,7 +103,7 @@ DATABASES = {
         'NAME': os.getenv('DB_NAME'),
         'USER': os.getenv('DB_USER'),
         'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
@@ -126,6 +126,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+AUTH_USER_MODEL = "users.CustomUser"
 
 
 # Internationalization

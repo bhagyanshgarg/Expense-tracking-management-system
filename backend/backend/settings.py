@@ -151,3 +151,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOW_ALL_ORIGINS = True  # ✅ Allows requests from any frontend
+
+CORS_ALLOW_CREDENTIALS = True  # ✅ Allows cookies (if needed)
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # ✅ Allow React frontend
+]
+
+CORS_ALLOW_METHODS = ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
